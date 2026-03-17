@@ -1,0 +1,99 @@
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #2a2a2a;
+  white-space: nowrap;
+}
+
+.table th {
+  background: #1a1a2e;
+  color: #a0aec0;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table tbody tr:hover {
+  background: #1e1e2e;
+}
+
+.priority {
+  background: rgba(255, 200, 60, 0.05);
+}
+
+.priority:hover {
+  background: rgba(255, 200, 60, 0.1) !important;
+}
+
+.name {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.center {
+  text-align: center;
+}
+
+.yes {
+  color: #48bb78;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.no {
+  color: #4a5568;
+}
+
+/* Day badges */
+.days {
+  display: flex;
+  gap: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badgeActive {
+  background: #2d6a4f;
+  color: #95d5b2;
+}
+
+.badgeInactive {
+  background: #1e1e1e;
+  color: #4a5568;
+}
+
+/* Position badges */
+.positions {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.posBadge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: #1a365d;
+  color: #90cdf4;
+}
