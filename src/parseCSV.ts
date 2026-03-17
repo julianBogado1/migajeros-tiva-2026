@@ -22,7 +22,6 @@ export async function loadPlayers(): Promise<Player[]> {
       return {
         jugador: c[1]?.trim() ?? '',
         email: c[2]?.trim() ?? '',
-        prioridad: bool(c[3]),
         martes: bool(c[7]) || bool(c[8]) || bool(c[9]),
         jueves: bool(c[13]) || bool(c[14]) || bool(c[15]),
         sabado:

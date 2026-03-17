@@ -1,7 +1,6 @@
 export interface Player {
   jugador: string;
   email: string;
-  prioridad: boolean;
   // Availability
   martes: boolean;
   jueves: boolean;

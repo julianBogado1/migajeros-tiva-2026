@@ -27,22 +27,18 @@ export default function PlayerTable({ players }: Props) {
             <th>Partidos</th>
             <th>Titular</th>
             <th>Jugó último</th>
-            <th>Prioridad</th>
             <th>Disponibilidad</th>
             <th>Posiciones</th>
           </tr>
         </thead>
         <tbody>
           {players.map((p) => (
-            <tr key={p.jugador} className={p.prioridad ? styles.priority : ''}>
+            <tr key={p.jugador}>
               <td className={styles.name}>{p.jugador}</td>
               <td className={styles.center}>{p.games_played}</td>
               <td className={styles.center}>{p.games_starting}</td>
               <td className={styles.center}>
                 <Check value={p.played_last_game} />
-              </td>
-              <td className={styles.center}>
-                <Check value={p.prioridad} />
               </td>
               <td>
                 <div className={styles.days}>
